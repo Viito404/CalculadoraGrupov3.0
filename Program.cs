@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             string opcao = "";
-            string operador;
+            string operador = "";
 
             Console.WriteLine("Entre com uma opção:");
             Console.WriteLine("\nSoma(1)");
@@ -24,7 +24,14 @@
                 
             }
 
+               Console.WriteLine($"\nA operação escolhida foi {operador}.");
 
-        }
+               Console.Write("\nEntre com o primeiro valor:\n> ");
+               int valor1 = Convert.ToInt32(Console.ReadLine());
+
+
+               Console.Write("\nEntre com o segundo valor:\n> ");
+               int valor2 = Convert.ToInt32(Console.ReadLine());
+          }
     }
 }
